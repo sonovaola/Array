@@ -9,21 +9,20 @@ let Arr = prompt ('Введіть набір чисел або/чи літер')
 if(Arr === ''){
 	alert ('Ви нiчого не ввели')
 	}
-	else if (Arr === null) {
-		alert ('Ви скасували')
-		}
-        else if (!Arr.trim( )){
-            alert ('Ви ввели лише пробіли. \nПотрібні числа або/чи літери')
-            }
-            else if (Arr.length < 5) {
-                alert ('Введіть мінімум 5 чисел або/чи літер')
-                }
-                else { 
-                    alert (`Те, що введено: \n${Arr}`)
-                    const newArr = Array.from(Arr);
-                    alert (`Відсортуровані символи за зростанням: \n${newArr.sort().join('')}`)
-
-                    newArr.splice(2,3).join('')
-                    alert (`Видалені елементи з 2 по 4 (включно!): \n${newArr.join('')}`)
-            }
+else if (Arr === null) {
+	alert ('Ви скасували')
+	}
+else if (!Arr.trim( )){
+    alert ('Ви ввели лише пробіли. \nПотрібні числа або/чи літери')
+    }
+else if (Arr.length < 5) {
+    alert ('Введіть мінімум 5 чисел або/чи літер')
+    }
+else { 
+    alert (`Те, що введено: \n${Arr}`)
+        const newArr = Array.from(Arr);
+    alert (`Відсортуровані символи за зростанням: \n${newArr.sort().join('')}`)
+        newArr.splice(2,3).join('')
+    alert (`Видалені елементи з 2 по 4 (включно!): \n${newArr.join('')}`)
+    }
             
